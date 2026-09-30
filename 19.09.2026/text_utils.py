@@ -15,3 +15,11 @@ def mean(values):
     return sum(values) / len(values)
 
 
+
+import text_utils
+
+otvet1 = text_utils.load_data()
+otvet2 = text_utils.filter_above(otvet1, threshold=10)
+otvet3 = text_utils.mean(otvet2)
+
+print('Ответ:',otvet3)
